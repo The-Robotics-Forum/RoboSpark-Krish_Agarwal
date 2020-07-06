@@ -22,7 +22,7 @@ int main(){
     Yashraj.stud_id = 191350;
 
     //stud_name specification
-    strcpy(Avinash.stud_name, "Anubhav Vijayvargiya");
+    strcpy(Anubhav.stud_name, "Anubhav Vijayvargiya");
     strcpy(Neel.stud_name,"Neel Malwatkar");
     strcpy(Ayush.stud_name,"Ayush Prasad");
     strcpy(Yashraj.stud_name,"Yashraj Panar");

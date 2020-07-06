@@ -51,23 +51,23 @@ int main(){
     }else if (user_in==2){    //TO GET STUDENT DETIALS ONLY....!   
         cout << "\nPASS STUDENT DETIALS --- \n";
         cout << "STUDENT NAME: ";
-        cin >> s1.sname;
+        cin >> s1.stud_name;
         cout << "PASS ROLL NUMBER: ";
-        cin >> s1.sroll;
+        cin >> s1.stud_roll;
         cout << "PASS STUDENT ID : ";
-        cin >> s1.sid;   
-        showRank(s1.sname, s1.sroll, s1.sid);
+        cin >> s1.stud_id;   
+        showRank(s1.stud_name, s1.stud_roll, s1.stud_id);
     }else{   //TO GET STUDENT DETAILS AS WELL AS RANK...!
         cout << "\nPASS STUDENT DETIALS --- \n";
         cout << "STUDENT NAME: ";
-        cin >> s1.sname;
+        cin >> s1.stud_name;
         cout << "PASS ROLL NUMBER: ";
-        cin >> s1.sroll;
+        cin >> s1.stud_roll;
         cout << "PASS STUDENT ID : ";
-        cin >> s1.sid;
+        cin >> s1.stud_id;
         cout << "PASS RANK: ";
         cin >> rank;
-        showRank(s1.sname, s1.sroll, s1.sid, rank);
+        showRank(s1.stud_name, s1.stud_roll, s1.stud_id, rank);
     }
     return 0;
 }

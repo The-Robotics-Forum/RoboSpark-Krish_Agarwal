@@ -67,7 +67,7 @@ bool ArePair(char opening,char closing)
 	return false;
 }
 
-void main()
+int main()
 {
     char in_expr[MAX_SIZE];
     int length=0,i,j;
@@ -97,4 +97,6 @@ void main()
     }else{
         printf("\nNot a Balanced one !");
     }
-}s
+
+    return 0;
+}
