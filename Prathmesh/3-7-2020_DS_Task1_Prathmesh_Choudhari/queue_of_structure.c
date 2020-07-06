@@ -70,3 +70,17 @@ int main(){
 
 
 }
+
+/*
+Enter the name of student: Ram
+
+Enter the roll number of student: 2
+
+FRONT :  Ram-> 2   REAR.
+Enter the name of student: Shyam
+
+Enter the roll number of student: 4
+
+FRONT :  Ram-> 2   Shyam-> 4   REAR.
+FRONT :  Shyam-> 4   REAR.
+*/

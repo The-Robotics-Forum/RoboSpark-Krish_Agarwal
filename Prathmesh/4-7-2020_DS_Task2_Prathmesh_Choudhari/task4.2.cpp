@@ -15,17 +15,23 @@ public:
     int roll;
     float cgpa;
     void showRank(Student S){
-        cout<<"\tStudent detils\n";
-        cout<<"Name: "<<S.name<<"\nRoll: "<<S.roll<<"\nCGPA: "<<S.cgpa<<"\nRank: No rank";
-
+        cout<<"\n\n\tStudent detils\n";
+        cout<<"\n\tStudent detils\n";
+        cout<<"Name: "<<S.name;
+        cout<<"\nRoll: "<<S.roll;
+        cout<<"\nCGPA: "<<S.cgpa<<endl;
+        
 
     }
     void showRank(Student S, int rank){
-        cout<<"\tStudent detils\n";
-        cout<<"Name: "<<S.name<<"\nRoll: "<<S.roll<<"\nCGPA: "<<S.cgpa<<"\nRank: "<<rank;
+        cout<<"\n\tStudent detils\n";
+        cout<<"Name: "<<S.name;
+        cout<<"\nRoll: "<<S.roll;
+        cout<<"\nCGPA: "<<S.cgpa;
+        cout<<"\nRank: "<<rank<<endl;
     }
     void showRank(int rank){
-        cout<<"\tStudent Rank: "<<rank;
+        cout<<"\nStudent Rank: "<<rank<<endl;
     }
 
 
@@ -43,3 +49,20 @@ int main()
     S.showRank(rank);
 
 }
+
+/*
+        Student detils
+Name: John
+Roll: 21
+CGPA: 8.6
+Rank: No rank
+
+   Student detils
+Name: John
+Roll: 21
+CGPA: 8.6
+Rank: 2
+
+Student Rank: 2
+
+*/

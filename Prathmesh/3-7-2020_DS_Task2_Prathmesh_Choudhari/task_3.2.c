@@ -47,3 +47,15 @@ int main()
     postorder(root);
     return 0;
 }
+/*
+Output
+
+20
+40
+30
+60
+80
+70
+50
+
+*/

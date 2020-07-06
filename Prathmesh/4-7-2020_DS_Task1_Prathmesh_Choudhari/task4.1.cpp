@@ -12,6 +12,11 @@ class Student{
     
     string name;
     int roll;
+
+    Student(){
+        name="";
+        roll=0;
+    }
     int* arr= new int[5];
     int total(int* arr){
         float  sum=0;
@@ -59,3 +64,21 @@ int main(){
     S.display(S);
 
 }
+
+/*
+Fill student details
+Enter the name and roll number
+John
+13
+Enter the marks (out of 100) of 5 subjects
+90
+80
+70
+80
+90
+
+Student name: John
+Roll number: 13
+The total score is: 410
+CGPA: 8.63158
+*/
