@@ -68,7 +68,7 @@ public:
 	}
 
 	// Making our own concatenation operator by operator overloading
-	String& operator+(String const& s){
+	String operator+(String const& s){
 
 		// Calculating length of both the strings
 		int strLength1 = this -> length;
@@ -92,16 +92,11 @@ public:
 		// Also end the string with Null character
 		newStr[index_new_str] ='\0';
 
-		// Deallocating memory of old string
-		delete [] (this -> str);
-		// Assigning Base address of our new String ptr to old String ptr
-		this -> str = newStr;
-		this -> length = length;
-
-		return *this;
+		String temp(newStr);
+		return temp;
 	}
 
-	String& operator*(unsigned int numOfTimes){
+	String operator*(unsigned int numOfTimes){
 
 		// Calculating length of the string after multiplication of strings
 		int strLength = (this -> length) * numOfTimes;
@@ -123,13 +118,8 @@ public:
 		// Also end the string with Null character
 		newStr[index_new_str] ='\0';
 
-		// Deallocating memory of old string
-		delete [] (this -> str);
-		// Assigning Base address of our new String ptr to old String ptr
-		this -> str = newStr;
-		this -> length = strLength;
-
-		return *this;
+		String temp(newStr);
+		return temp;
 	}
 
 	void readline(char delimitor='\n'){
@@ -221,7 +211,6 @@ public:
 		return this -> str;
 	}
 
-
 	// It returns the length of string.
 	int getLength(){
 		return this -> length;
@@ -241,7 +230,6 @@ public:
 		if(this -> str!=NULL){
 			delete [] str;
 			this -> str = NULL;
-			cout << "Destructor !" << endl;
 		}
 	}
 
@@ -258,13 +246,41 @@ int main(int argc, char const *argv[]){
 	String s2(name);
 	cout << s2 << endl;
 
-	// Concatenation of two Strings
-	String s3;
-	s3 = (s1 + s2);
-	cout << s3 << endl;
+	// Concatenating s1 and s2 strings
+	String s1Ands2;
+	s1Ands2 = s1 + s2;
+	cout << s1Ands2 << endl; 
 
-	// Multipication of string s3 by 5
-	cout << s3*5 << endl;
+	// ================================
+
+	char Hello[] = "Hello ";
+	String s3(Hello);
+	cout << s3 << endl;
+	cout << s3*3 << endl;
+
+	char In[] = "In ";
+	String s4(In);
+	cout << s4 << endl;
+	cout << s3*4 << endl;
+
+	char Programming[] = "The world of Programming ";
+	String s5(Programming);
+	cout << s5 << endl;
+	cout << s5*2 << endl;
+
+	// Nesting of concatenation
+	// Concatenating s1,s2,s3,s4,s5
+	String s6;
+	s6 = s1 + s2 + s3 + s4 + s5;
+	cout << s6 << endl;  
+
+	// Multipication of string s5 by 2
+	s6 = s5 * 2;
+	cout << s6 << endl;
+
+	// Using multiplication operator with concatenation operator
+	s6 = (s5 * 2) + (s3 * 3) + s2;
+	cout << s6 << endl;
 
 	return 0;
 }
