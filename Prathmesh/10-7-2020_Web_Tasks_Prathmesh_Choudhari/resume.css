@@ -1,0 +1,66 @@
+    body {
+        text-align: center;
+    }
+    
+    #about-section {
+        font-style: italic;
+        font-size: larger;
+        background-color: bisque;
+        border: 5px solid;
+    }
+    
+    #education {
+        background-color: beige;
+        width: 48%;
+    }
+    
+    #Projects {
+        float: left;
+        width: 50%;
+        height: 240px;
+        visibility: inherit;
+        text-align: left;
+        padding: 15px;
+        background-color: dimgrey;
+        color: whitesmoke;
+        font-size: x-large;
+    }
+    
+    #row2 {
+        display: flex;
+    }
+    
+    a {
+        color: darkgrey;
+        text-decoration: dotted;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    
+    #extra {
+        width: 52%;
+        float: left;
+        background-color: beige;
+    }
+    
+    #coextra {
+        width: 46%;
+        float: right;
+        padding: 10px;
+        text-align: center;
+        background-color: dimgrey;
+        color: whitesmoke;
+    }
+    
+    li {
+        text-align: left;
+        padding-bottom: 20px;
+        font-size: large;
+    }
+    
+    #education {
+        display: inline-table;
+    }
