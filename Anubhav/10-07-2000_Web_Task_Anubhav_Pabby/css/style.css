@@ -1,0 +1,45 @@
+#about-section  p {
+	font-family:Helvetica;
+	font-size:20px;
+	font-style:normal;
+	text-align:justify;
+	text-justify:inter-word;
+
+}
+
+.education
+{
+	font-family:Helvetica;
+	font-size:20px;
+	font-style:normal;
+	text-align:justify;
+
+}
+
+
+
+#projects ul li a
+{
+	font-family:Helvetica;
+	font-size:20px;
+	font-style:normal;
+	text-align:justify;
+}
+
+body
+{
+	background-color:#D0DC08;
+}
+
+
+a:unvisited {
+	color:purple;
+}
+
+a:visited {
+	color:blue;
+}
+
+a:hover {
+	color:green;
+}
